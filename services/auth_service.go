@@ -1,8 +1,9 @@
 package services
 
 import (
-	"blog-management/models"
 	"fmt"
+
+	"github.com/VaishnaviDubey0907/blog_management/models"
 )
 
 func Login(user models.User) string {

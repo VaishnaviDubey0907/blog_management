@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"blog-management/models"
-	"blog-management/services"
 	"net/http"
 
+	"github.com/VaishnaviDubey0907/blog_management/models"
+	"github.com/VaishnaviDubey0907/blog_management/services"
 	"github.com/gin-gonic/gin"
 )
 

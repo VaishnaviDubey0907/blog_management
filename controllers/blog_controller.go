@@ -1,9 +1,10 @@
 package controllers
 
 import (
-	"blog-management/models"
-	"blog-management/services"
 	"net/http"
+
+	"github.com/VaishnaviDubey0907/blog_management/models"
+	"github.com/VaishnaviDubey0907/blog_management/services"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,4 +17,13 @@ func CreateBlog(c *gin.Context) {
 	}
 	services.CreateBlog(blog)
 	c.JSON(http.StatusOK, gin.H{"message": "Blog created"})
+}
+func GetBlogByID(c *gin.Context) {
+	id := c.Param("id") // Get the blog ID from URL
+	blog, err := services.GetBlogByID(id)
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Blog not found"})
+		return
+	}
+	c.JSON(http.StatusOK, blog)
 }

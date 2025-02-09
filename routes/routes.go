@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"blog-management/controllers"
+	"github.com/VaishnaviDubey0907/blog_management/controllers"
 
 	"github.com/gin-gonic/gin"
 )

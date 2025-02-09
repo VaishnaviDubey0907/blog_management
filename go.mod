@@ -1,4 +1,4 @@
-module blog-management
+module github.com/VaishnaviDubey0907/blog_management
 
 go 1.22.5
 

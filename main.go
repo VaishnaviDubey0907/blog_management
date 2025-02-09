@@ -1,8 +1,8 @@
 package main
 
 import (
-	"blog-management/config"
-	routes "blog-management/routes"
+	"github.com/VaishnaviDubey0907/blog_management/config"
+	"github.com/VaishnaviDubey0907/blog_management/routes"
 )
 
 func main() {
